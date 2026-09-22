@@ -109,7 +109,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.activate(ignoringOtherApps: true)
         let alert = NSAlert()
         alert.messageText = "MailToGmail"
-        alert.informativeText = "This is a background helper that redirects mailto: links to Gmail's web compose window. Set it as the default email reader in Mail > Settings > General — it isn't meant to be opened directly."
+        alert.informativeText = "This is a background helper that redirects mailto: links to Gmail's web compose window. To use it, open Mail, then choose Mail > Settings > General and set Default Email Reader to MailToGmail. It isn't meant to be opened directly otherwise."
         alert.addButton(withTitle: "OK")
         alert.runModal()
         NSApp.terminate(nil)
